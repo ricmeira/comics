@@ -1,0 +1,17 @@
+.Comic {
+    border: 1px solid darkred;
+    width: 265px;
+    height: 425px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.Comic_select_email {
+    display: flex;
+    cursor: pointer;
+}

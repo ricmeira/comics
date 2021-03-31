@@ -1,0 +1,8 @@
+.Paginator_button {
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
+}

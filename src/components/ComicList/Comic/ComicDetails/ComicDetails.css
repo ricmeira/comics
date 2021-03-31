@@ -1,0 +1,11 @@
+.ComicDetails {
+
+}
+
+.ComicDetails_title {
+    margin-bottom: 16px;
+}
+
+.ComicDetails_details {
+    display: flex;
+}
