@@ -9,6 +9,7 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
+    cursor: pointer;
 }
 
 .Comic_select_email {

@@ -1,3 +1,41 @@
+# Hospedagem web
+- Para ver uma versão live, acessar o link: [Comics]https://ricmeira.github.io/comics/
+
+# Sobre o projeto
+- Para facilitar o desenvolvimento e evitar de ter que fazer setup inicial(webpack, etc), o projeto foi incialmente criado usando o [Create React App](https://github.com/facebook/create-react-app).
+- Envio de email foi feito utilizando o serviço da emailJS
+- Testes foram feitos usando Jest + Enzyme
+
+# Sobre arquitetura
+- O projeto tem 4 pastas principais:
+-- assets: Onde ficam arquivos estaticos(imagens)
+-- constantes: Onde ficam os arquivos de constantes do projeto
+-- container: Onde ficam os arquivos stateful
+-- components: Onde ficam os arquivos stateless
+
+# Bibliotecas utiliziadas(Além do react)
+- Axios - Para requisições http
+- Proptypes - Para checagem de tipos
+- EmailJS - Para envio de emails
+- Jest/Enzyme - Para testes
+- gh-pages - Para deploy no github pages
+
+# Proximos Passos
+- Melhorias de Layout
+- Adicionar validações(email)
+- Aumento na cobertura de testes
+- Filtragem avançada de quadrinhos(por autor, personagem, etc)
+- Novas páginas(pesquisas de personagens, etc)
+- Criação backend para controle de usuários, favoritos, etc
+- Adicionar redux(ou retirar o excesso de useState por useReduce)
+- Adicionar rotas
+
+# Como rodar local
+- npm install
+- Ir em https://developer.marvel.com, criar uma conta e colocar o valor da api_key na constante MARVEL_API_KEY da classe constants
+- Criar conta no EmailJS.Seguir a documentação em: [EmailJS](https://www.emailjs.com/docs/user-guide/connecting-email-services/). Colocar os valores das variaveis criadas no EmailJS nas constantes EMAIL_TEMPLATE_NAME, EMAIL_USER_NAME, EMAIL_SERVICE_NAME da classe constants
+- npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -38,33 +76,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

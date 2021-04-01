@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import './Comic.css';
 
 const Comic = ({ comic, comicClicked, comicSelected }) => {
-    console.log(`Comic ${comic.id} rendered`);
     return (
         <div className="Comic" onClick={() => comicClicked(comic)}>
             <img 
@@ -14,8 +13,7 @@ const Comic = ({ comic, comicClicked, comicSelected }) => {
             />
             <h3>{comic.title}</h3>
             <div className="Comic_select_email">
-                <input type="checkbox" onClick={(event) => comicSelected(event, comic)}/>
-                <p>Selecionar para envio via email</p>
+                <label><input type="checkbox" onClick={event => comicSelected(event, comic)}/>Selecionar para envio via email</label>
             </div>
         </div>
     );

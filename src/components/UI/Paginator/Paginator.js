@@ -14,7 +14,7 @@ const Paginator = ({ currentEntry, totalEntries, numberPerPage, changePage }) =>
                 disabled={currentEntry === 0}>
                 Anterior
             </button>
-            <span>{`Mostrando ${currentEntry}-${currentEntry + numberPerPage} de ${totalEntries}`}</span>
+            <span className="Paginator_text">{`Mostrando ${currentEntry}-${currentEntry + numberPerPage} de ${totalEntries}`}</span>
             <button
                 className="Paginator_button"
                 onClick={() => changePage(currentEntry + numberPerPage)}>

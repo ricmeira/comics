@@ -2,7 +2,7 @@ import React from 'react';
 
 import Backdrop from '../Backdrop/backdrop';
 
-import './modal.css';
+import './Modal.css';
 
 const Modal = ({ show, children, modalClosed }) => {
 

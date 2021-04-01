@@ -1,8 +1,17 @@
 .Paginator_button {
-    color: red;
-    border: 1px solid red;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
     cursor: pointer;
-    background-color: transparent;
     padding: 10px;
     margin: 10px;
+    border-radius: 25px;
+}
+
+.Paginator_button:disabled {
+    cursor: not-allowed;
+}
+
+.Paginator_text {
+    color: white;
 }

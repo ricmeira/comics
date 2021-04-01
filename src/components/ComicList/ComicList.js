@@ -7,8 +7,6 @@ import Comic from './Comic/Comic';
 import './ComicList.css';
 
 const comicList = ({ comicList, comicClicked, comicSelected, loading }) => {
-    
-    console.log("ComicList rendered");
 
     const comicsDivs = (
         comicList.map(element => 
