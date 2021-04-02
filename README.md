@@ -1,5 +1,5 @@
 # Hospedagem web
-- Para ver uma versão live, acessar o link: [Comics]https://ricmeira.github.io/comics/
+- Para ver uma versão live, acessar o link: [Comics](https://ricmeira.github.io/comics/)
 
 # Sobre o projeto
 - Para facilitar o desenvolvimento e evitar de ter que fazer setup inicial(webpack, etc), o projeto foi incialmente criado usando o [Create React App](https://github.com/facebook/create-react-app).
@@ -8,10 +8,10 @@
 
 # Sobre arquitetura
 - O projeto tem 4 pastas principais:
--- assets: Onde ficam arquivos estaticos(imagens)
--- constantes: Onde ficam os arquivos de constantes do projeto
--- container: Onde ficam os arquivos stateful
--- components: Onde ficam os arquivos stateless
+  - assets: Onde ficam arquivos estaticos(imagens)
+  - constantes: Onde ficam os arquivos de constantes do projeto
+  - container: Onde ficam os arquivos stateful
+  - components: Onde ficam os arquivos stateless
 
 # Bibliotecas utiliziadas(Além do react)
 - Axios - Para requisições http
