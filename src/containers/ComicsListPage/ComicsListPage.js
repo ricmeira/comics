@@ -34,9 +34,10 @@ const ComicsListPage = () => {
                         title: element.title,
                         description: element.description,
                         thumbnail: element.thumbnail,
-                        creators: element.creators.items,
+                        creators: element.creators ? element.creators.items : null,
                     })    
                 });
+
 
                 setComicList(comicsArray);
                 setPaginas({
@@ -124,10 +125,21 @@ const ComicsListPage = () => {
             </Modal>) : null}
             <div className="Main" style={{backgroundImage: `url(${Background})`, backgroundSize: "cover"}}>
                 <div>
-                    <input className="Main_input" onChange={event => setSearchValue(event.target.value)} placeholder="Pesquisa por titulo do quadrinho. Ex: Hulk."/>
-                    <button className="Main_button" onClick={() => executeSearch(0)} disabled={searchValue.trim() === ""}> Pesquisar </button>
+                    <input id="search_input" className="Main_input" onChange={event => setSearchValue(event.target.value)} placeholder="Pesquisa por titulo do quadrinho da Marvel. Ex: Hulk."/>
+                    <button id="search_button" className="Main_button" onClick={() => executeSearch(0)} disabled={searchValue.trim() === ""}> Pesquisar </button>
+                    {comicList.length > 0 ? (
+                    <button
+                        id="send_email_button"
+                        className="Main_button Main_button_white"
+                        onClick={() => isEmailModal(true)} disabled={comicsSelectedList === null || comicsSelectedList.length === 0}
+                        >
+                            Enviar por email
+                    </button>
+                    )
+                    : null
+                }
                 </div>
-                {errorMessage ? <p className="Main_text">{errorMessage}</p> : null}
+                {errorMessage ? <p id="error_message" className="Main_text">{errorMessage}</p> : null}
                 <ComicList
                     comicList={comicList}
                     comicClicked={onComicClicked}
@@ -141,16 +153,6 @@ const ComicsListPage = () => {
                         numberPerPage={NUMBER_COMICS_PER_REQUISITION}
                         changePage={executeSearch}
                     />
-                    : null
-                }
-                {comicList.length > 0 ? (
-                    <button
-                        className="Main_button Main_button_white"
-                        onClick={() => isEmailModal(true)} disabled={comicsSelectedList === null || comicsSelectedList.length === 0}
-                        >
-                            Enviar por email
-                    </button>
-                    )
                     : null
                 }
             </div>

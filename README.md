@@ -4,7 +4,7 @@
 # Sobre o projeto
 - Para facilitar o desenvolvimento e evitar de ter que fazer setup inicial(webpack, etc), o projeto foi incialmente criado usando o [Create React App](https://github.com/facebook/create-react-app).
 - Envio de email foi feito utilizando o serviço da emailJS
-- Testes foram feitos usando Jest + Enzyme
+- Testes foram feitos usando Jest + Enzyme(No momento so existe uma classe de teste: ComicListPage.test.js))
 
 # Sobre arquitetura
 - O projeto tem 4 pastas principais:
@@ -26,6 +26,7 @@
 - Aumento na cobertura de testes
 - Filtragem avançada de quadrinhos(por autor, personagem, etc)
 - Novas páginas(pesquisas de personagens, etc)
+- Animações
 - Criação backend para controle de usuários, favoritos, etc
 - Adicionar redux(ou retirar o excesso de useState por useReduce)
 - Adicionar rotas
